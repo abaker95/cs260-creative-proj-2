@@ -2,7 +2,6 @@ body {
     background-image: url("images/yellow-parchment.jpg");
 }
 
-
 .quote_results>div {
     background-image: url("images/white-parchment.jpg");
     color: rgb(37, 37, 37);
@@ -13,9 +12,10 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.quote_results>div>img {
-    display: block;
-    margin: auto;
+.quote_results>div>p {
+    font-family: 'Meie Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .quote_results>div>h3 {
@@ -25,7 +25,6 @@ body {
 .main_header {
     background-color: rgb(53, 43, 37);
     color: rgb(255, 249, 242);
-    border-image-slice: 0 50 0 50 fill;
     width: 60%;
     margin-top: 20px;
     margin-left: auto;
@@ -36,6 +35,18 @@ body {
 
 .main_header>h1 {
     text-align: center;
+    font-family: 'Meie Script', cursive;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+#link {
+    color: rgb(255, 249, 242);
+}
+
+#link:hover {
+    color: rgb(193, 225, 233);
 }
 
 @media only screen and (max-width: 767px) and (min-width: 0px) {
@@ -51,5 +62,10 @@ body {
 
     .main_header>h1 {
         text-align: center;
+    }
+
+    .quote_results>div>p {
+        font-family: 'Meie Script', cursive;
+        font-size: 25px;
     }
 }

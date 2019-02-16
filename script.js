@@ -22,7 +22,7 @@ document.getElementById("quoteSubmit").addEventListener("click", function (event
         console.log(myjson);
 
         let results = ""; //create dynamic javascript here
-        results += "<div><h2>Some Quotes</h2><hr>";
+        results += "<div><h2>25 Quotes</h2><hr>";
         for (let i = 0; i < myjson.quotes.length; i++) {
             results += "<p>" + myjson.quotes[i].body + "</p>";
             results += "<h3>--" + myjson.quotes[i].author + "</h3><hr>";
@@ -60,9 +60,9 @@ document.getElementById("quoteFilterSubmit").addEventListener("click", function 
         let results = ""; //create dynamic javascript here
         results += "<div><h2>" + tag.charAt(0).toUpperCase() + tag.slice(1) + " Quotes</h2><hr>";
         for (let i = 0; i < myjson.quotes.length; i++) {
-            if(myjson.quotes[i].body !== undefined){
-            results += "<p>" + myjson.quotes[i].body + "</p>";
-            results += "<h3>--" + myjson.quotes[i].author + "</h3><hr>";
+            if (myjson.quotes[i].body !== undefined) {
+                results += "<p>" + myjson.quotes[i].body + "</p>";
+                results += "<h3>--" + myjson.quotes[i].author + "</h3><hr>";
             }
             //TODO add tags
         }
